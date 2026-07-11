@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "title": "Modern Farmhouse Kitchen",
+    "titleFr": "Cuisine Moderne de Ferme",
+    "description": "Custom shaker cabinets with quartz countertops and soft-close hardware throughout.",
+    "descriptionFr": "Armoires shaker sur mesure avec comptoirs en quartz et ferrures à fermeture douce.",
+    "category": "interior",
+    "imageUrl": "/images/portfolio/kitchen.webp",
+    "createdAt": "2025-11-01T10:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "title": "Heritage Gate Restoration",
+    "titleFr": "Restauration de Portail Patrimonial",
+    "description": "Full restoration of a 1920s wrought iron entrance gate including rust treatment and powder coating.",
+    "descriptionFr": "Restauration complète d'un portail en fer forgé des années 1920 incluant traitement antirouille et revêtement en poudre.",
+    "category": "exterior",
+    "imageUrl": "/images/portfolio/gate.webp",
+    "createdAt": "2025-10-15T10:00:00.000Z"
+  },
+  {
+    "id": "3",
+    "title": "Retail Storefront Build-Out",
+    "titleFr": "Aménagement de Façade Commerciale",
+    "description": "Complete commercial interior build-out for a boutique retail space with custom display fixtures.",
+    "descriptionFr": "Aménagement intérieur commercial complet pour une boutique avec présentoirs sur mesure.",
+    "category": "commercial",
+    "imageUrl": "/images/portfolio/storefront.webp",
+    "createdAt": "2025-09-20T10:00:00.000Z"
+  }
+]
