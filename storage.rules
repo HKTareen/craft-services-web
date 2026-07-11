@@ -1,0 +1,13 @@
+rules_version = '2';
+
+// Uploaded images are served directly to the browser (via <Image>), so reads
+// are public. Uploads happen server-side through the Admin SDK (which bypasses
+// these rules), so client writes are denied.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}

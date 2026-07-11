@@ -1,0 +1,48 @@
+runConfig:
+  minInstances: 0
+  maxInstances: 10
+  concurrency: 80
+  cpu: 1
+  memoryMiB: 512
+
+env:
+  - variable: NEXT_PUBLIC_SITE_URL
+    value: https://craft-services-web--artisan-craft-services.us-central1.hosted.app
+    availability:
+      - BUILD
+      - RUNTIME
+
+  # Firebase web config — public, inlined at build. Replace the placeholder
+  # values with the real config from Firebase console → Project settings → Web app.
+  # (Server-side Admin SDK uses Application Default Credentials automatically on
+  # App Hosting, so no service account key is needed here.)
+  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
+    value: AIzaSyDIa6pIYJ0agsIE65qo4zlwXCcoWTTx1E4
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+    value: artisan-craft-services.firebaseapp.com
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+    value: artisan-craft-services
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+    value: artisan-craft-services.firebasestorage.app
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+    value: "370394760628"
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_APP_ID
+    value: 1:370394760628:web:6f1f5e205efa2dec3edee1
+    availability:
+      - BUILD
+      - RUNTIME

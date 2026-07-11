@@ -1,0 +1,19 @@
+{
+  "apphosting": {
+    "backendId": "craft-services-web",
+    "rootDir": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      ".next/**"
+    ],
+    "alwaysDeployFromSource": true
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}
