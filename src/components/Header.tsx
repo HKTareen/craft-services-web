@@ -32,20 +32,31 @@ export default function Header({ locale, dict }: HeaderProps) {
 
   return (
     <header className="sticky top-0 z-50 border-b border-stone-200 bg-white/95 backdrop-blur-sm leading-none">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-2 sm:px-4 lg:px-6">
+      <div className="mx-auto flex h-[50px] max-w-7xl items-center justify-between gap-4 px-3 sm:px-4 lg:px-6">
         <Link
           href={localizedPath(locale, "/")}
-          className="block shrink-0 leading-none transition-opacity hover:opacity-80"
+          className="flex shrink-0 items-center gap-2 leading-none transition-opacity hover:opacity-80 sm:gap-3"
           aria-label={dict.company.name}
         >
+          {/* Tweak icon size via these height classes */}
           <Image
-            src={dict.media.logoUrl}
-            alt={dict.company.name}
-            width={2252}
-            height={667}
+            src="/images/logo-icon.png"
+            alt=""
+            width={294}
+            height={321}
             priority
             unoptimized
-            className="my-2 block h-16 w-auto bg-transparent sm:h-[4.5rem]"
+            className="my-[8px] block h-[34px] w-auto object-contain"
+          />
+          {/* Tweak wordmark size via these height classes — asset is tight-cropped to ink */}
+          <Image
+            src="/images/logo-text.png"
+            alt={dict.company.name}
+            width={522}
+            height={69}
+            priority
+            unoptimized
+            className="block h-auto w-[150px] max-w-[150px] self-center object-contain"
           />
         </Link>
 
