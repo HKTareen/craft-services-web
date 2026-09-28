@@ -7,7 +7,7 @@ runConfig:
 
 env:
   - variable: NEXT_PUBLIC_SITE_URL
-    value: https://craft-services-web--artisan-craft-services.us-central1.hosted.app
+    value: https://finitionpeinture.com
     availability:
       - BUILD
       - RUNTIME
