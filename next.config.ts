@@ -20,6 +20,34 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value:
+              "craft-services-web--artisan-craft-services.us-central1.hosted.app",
+          },
+        ],
+        destination: "https://finitionpeinture.com/:path*",
+        permanent: true,
+      },
+      {
+        source: "/",
+        has: [
+          {
+            type: "host",
+            value:
+              "craft-services-web--artisan-craft-services.us-central1.hosted.app",
+          },
+        ],
+        destination: "https://finitionpeinture.com/fr",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
